@@ -1,0 +1,3 @@
+showing the gpio pin table
+--------------------------
+gpio readall
