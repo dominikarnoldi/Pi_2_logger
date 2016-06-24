@@ -6,3 +6,5 @@
 #define PI_2_LOGGER_LOGGER_C_H
 
 #endif //PI_2_LOGGER_LOGGER_C_H
+
+static void count_edge(void* val);

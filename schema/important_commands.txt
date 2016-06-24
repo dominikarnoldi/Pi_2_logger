@@ -1,3 +1,7 @@
 showing the gpio pin table
 --------------------------
 gpio readall
+
+setting pin ready for falling edge (console)
+-------------------------------------------
+gpio edge 0 falling
