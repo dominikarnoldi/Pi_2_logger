@@ -6,12 +6,13 @@
 #include <wiringPi.h>
 #include <pthread.h>
 #include <stdio.h>
+#define EXIT_FAILURE 1;
 
 int  count = 0;
 
 static void logging_falling(void* val)
 {
-    wiringPilSR(0,INT_EDGE_FALLING, *count_edge());
+    wiringPilSR(0,INT_EDGE_FALLING, *count_edge);
 }
 
 static void count_edge(void* val)
