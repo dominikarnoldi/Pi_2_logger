@@ -10,18 +10,19 @@
 
 int  count = 0;
 
-static void logging_falling(void* val)
+static void *logging_falling(void* val)
 {
     wiringPilSR(0,INT_EDGE_FALLING, *count_edge);
+    return NULL;
 }
 
 static void count_edge(void* val)
 {
     count++;
 }
-static void impulse_output(void* val)
+static void *impulse_output(void* val)
 {
-
+    return NULL;
 }
 
 int main(viod)
