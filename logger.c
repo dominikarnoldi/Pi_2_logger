@@ -25,7 +25,7 @@ static void *impulse_output(void* val)
     return NULL;
 }
 
-int main(viod)
+int main(void)
 {
     wiringPiSetup();
     pinMode (0, OUTPUT) ;
