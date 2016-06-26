@@ -12,13 +12,14 @@ int  count = 0;
 
 static void *logging_falling(void* val)
 {
-    wiringPiISR(0,INT_EDGE_FALLING, *count_edge);
+    wiringPiISR(0,INT_EDGE_FALLING, &count_edge);
     return NULL;
 }
 
-static void *count_edge(void* val)
+static void count_edge(void* val)
 {
     count++;
+
 }
 static void *impulse_output(void* val)
 {
