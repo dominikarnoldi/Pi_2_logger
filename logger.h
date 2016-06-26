@@ -7,4 +7,4 @@
 
 #endif //PI_2_LOGGER_LOGGER_C_H
 
-static void count_edge(void val);
+static void count_edge(void);
