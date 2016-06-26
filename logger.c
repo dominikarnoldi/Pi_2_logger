@@ -12,7 +12,7 @@ int  count = 0;
 
 static void *logging_falling(void* val)
 {
-    wiringPilSR(0,INT_EDGE_FALLING, *count_edge);
+    wiringPiISR(0,INT_EDGE_FALLING, *count_edge);
     return NULL;
 }
 
