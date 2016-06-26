@@ -19,7 +19,7 @@ static void *logging_falling(void* val)
 static void count_edge(void* val)
 {
     count++;
-
+    printf("Counter raised ... counter: %d \n",count);
 }
 static void *impulse_output(void* val)
 {
